@@ -5,7 +5,7 @@ from tkinter import*
 cal=Tk()
 cal.geometry("354x460")
 cal.title("My Calcie")
-calLabel=Label(cal, text="Calculator", font=("Comic Sans", 30,'bold'))
+calLabel=Label(cal, text="Calculator", font=("Comic Sans Ms", 30,'bold'))
 calLabel.pack(side=TOP)
 
 textin=StringVar()
@@ -43,7 +43,7 @@ def equlbut():
 def clrbut():
     textin.set('')
 
-caltext=Entry(cal, font=("Comic Sans", 12, 'bold'), textvar=textin, width=25, bd=5, bg='plum')
+caltext=Entry(cal, font=("Courier New", 12, 'bold'), textvar=textin, width=25, bd=5, bg='plum')
 caltext.pack()
 
 but1=Button(cal, padx=14, pady=14, bd=4, bg='medium turquoise', command=lambda:clickbut(1),text="1", font=("Courier New", 16, 'bold'))
